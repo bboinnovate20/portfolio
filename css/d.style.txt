@@ -1,0 +1,711 @@
+                                                        /* general layout */
+                                                        
+* {
+          box-sizing: border-box;
+     }
+                                                        
+                                                        body {
+                                                            margin: 0;
+                                                            font-family: Raleway;
+                                                            font-size: 95%;
+                                                            --effect: ease-in-out;
+                                                            --dur: .3s;
+                                                            --tm: 5rem;
+                                                        }
+                                                        
+                                                        header {
+                                                            position: relative;
+                                                            background-color: #27496d04;
+                                                            height: calc(100vh);
+                                                        }
+                                                        
+                                                        img {
+                                                            max-width: 100%;
+                                                        }
+                                                        
+                                                        img.self {
+                                                            display: block;
+                                                            /* padding-top: 3rem; */
+                                                        }
+                                                        /* ----------------------------- */
+                                                        /* body layout */
+                                                        
+                                                        .main-header {
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: space-between;
+                                                            padding: 14px;
+                                                            padding-bottom: 0;
+                                                            background-color: rgba(255, 255, 255, 0.884);
+                                                        }
+                                                        
+                                                        .non-collapse {
+                                                            display: none !important;
+                                                        }
+                                                        
+                                                        .container {
+                                                            padding: 0 15px;
+                                                        }
+                                                        
+                                                        .thumbnail h3 {
+                                                            font-weight: normal;
+                                                            font-size: 100%;
+                                                        }
+                                                        /* --------------------------- */
+                                                        
+                                                        h2 {
+                                                            font-size: 1.5rem;
+                                                            font-weight: 800;
+                                                        }
+                                                        
+                                                        h3 {
+                                                            font-size: 1.4rem;
+                                                        }
+                                                        
+                                                        h4,
+                                                        p {
+                                                            margin: 0;
+                                                        }
+                                                        
+                                                        h4 {
+                                                            font-size: 1.2rem;
+                                                            font-weight: normal;
+                                                        }
+                                                        
+                                                        li {
+                                                            list-style: none;
+                                                            font-size: 1rem;
+                                                            line-height: 1.8rem;
+                                                        }
+                                                        
+                                                        ul {
+                                                            padding: 0;
+                                                            margin: 0;
+                                                        }
+                                                        
+                                                        .thumbnail {
+                                                            text-align: center;
+                                                            font-size: 1.1rem;
+                                                            margin-top: 1rem;
+                                                            line-height: 1.5rem;
+                                                        }
+                                                        
+                                                        .thumbnail h1 {
+                                                            font-weight: 750;
+                                                            line-height: 40px;
+                                                            color: #000925;
+                                                            font-size: 2rem;
+                                                            margin-top: 4rem;
+                                                        }
+                                                        
+                                                        .thumbnail h3 {
+                                                            font-size: 1.3rem;
+                                                            line-height: inherit;
+                                                        }
+                                                        
+                                                        p {
+                                                            line-height: 30px;
+                                                        }
+                                                        
+                                                        .primary {
+                                                            margin-top: -200px;
+                                                        }
+                                                        /* other element  */
+                                                        
+                                                        svg *,
+                                                        #list-outline {
+                                                            transition: all .2s ease;
+                                                        }
+                                                        
+                                                        #list-outline {
+                                                            width: 32px;
+                                                        }
+                                                        
+                                                        #brand:hover #bg {
+                                                            fill: #fff;
+                                                        }
+                                                        
+                                                        #brand:hover #second-layer * {
+                                                            fill: #142850;
+                                                        }
+                                                        
+                                                        #brand:hover #first-layer * {
+                                                            fill: #00a8cc;
+                                                        }
+                                                        
+                                                        #list-outline:hover {
+                                                            width: 30px;
+                                                        }
+                                                        
+                                                        #first-layer {
+                                                            fill: red;
+                                                        }
+                                                        
+                                                        .thumbnail img {
+                                                            margin: 0 auto;
+                                                            margin-top: 30px;
+                                                        }
+                                                        
+                                                        .background {
+                                                            width: 40%;
+                                                            height: 100%;
+                                                            position: absolute;
+                                                            background-image: linear-gradient(rgba(255, 255, 255, 0.349), rgba(253, 253, 253, 0.014)), url(../img/background_half.jpg);
+                                                            top: 0;
+                                                            right: 0;
+                                                            background-size: cover;
+                                                            background-position: 50%;
+                                                            z-index: -2;
+                                                        }
+                                                        
+                                                        .pc {
+                                                            /* width: 00px; */
+                                                            margin: 0 auto;
+                                                            display: block;
+                                                        }
+                                                        
+                                                        .g-pc {
+                                                            background-image: linear-gradient(0deg, white 70%, rgba(255, 255, 255, 0.034));
+                                                            width: 100%;
+                                                            padding-top: 30px;
+                                                            margin-top: 5rem;
+                                                            /* padding-bottom: 20px; */
+                                                        }
+                                                        
+                                                        .first-section {
+                                                            background-color: #041886;
+                                                            color: white;
+                                                            padding-top: 40px !important;
+                                                            padding-bottom: 180px!important;
+                                                            ;
+                                                            /* height: 650px; */
+                                                            text-align: center;
+                                                            margin-bottom: 12rem;
+                                                        }
+                                                        
+                                                        .first-section h3 {
+                                                            font-weight: bold;
+                                                        }
+                                                        
+                                                        .first-section p {
+                                                            font-size: 1.2rem;
+                                                            line-height: 2rem;
+                                                        }
+                                                        
+                                                        .wrapper {
+                                                            padding: 20px 20px;
+                                                        }
+                                                        
+                                                        #other {
+                                                            display: inline-block;
+                                                            line-height: 40px;
+                                                        }
+                                                        
+                                                        .section-2 {
+                                                            /* position: absolute; */
+                                                            width: 90%;
+                                                            margin: 0 auto;
+                                                        }
+                                                        
+                                                        .content-6,
+                                                        .content-5,
+                                                        .content-4,
+                                                        .col-md-3,
+                                                        .content-3 {
+                                                            line-height: 2rem;
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .col-md-3 {
+                                                            padding-top: 40px;
+                                                            background-color: #ffffff;
+                                                            box-shadow: 0 0 2px #00a8cc;
+                                                            padding-left: 20px;
+                                                            padding-right: 20px;
+                                                        }
+                                                        
+                                                        .col-md-3 div {
+                                                            margin-bottom: 50px;
+                                                        }
+                                                        
+                                                        .con-1 {
+                                                            border-radius: 1rem 1rem 0 0;
+                                                        }
+                                                        
+                                                        .section-2 p {
+                                                            font-size: 1.2rem;
+                                                        }
+                                                        
+                                                        .col,
+                                                        .section-2 {
+                                                            margin-top: -300px;
+                                                        }
+                                                        
+                                                        .section-2 h3 {
+                                                            font-weight: 800;
+                                                        }
+                                                        
+                                                        .section-2 div h4 {
+                                                            color: #00a8cc;
+                                                            font-weight: 700;
+                                                        }
+                                                        
+                                                        .section-2 div h2 {
+                                                            font-size: 180%;
+                                                            font-weight: 800;
+                                                        }
+                                                        
+                                                        #more {
+                                                            font-size: .9rem;
+                                                        }
+                                                        
+                                                        .con-2 {
+                                                            padding-bottom: 5px;
+                                                        }
+                                                        
+                                                        .con-3 {
+                                                            border-radius: 0 0 1rem 1rem;
+                                                            box-shadow: 0 5px 5px 0 #00a7cc13, 0 0 0 1px #E6ECF8;
+                                                        }
+                                                        
+                                                        .content-3 h1 {
+                                                            font-size: 1.8rem;
+                                                        }
+                                                        
+                                                        .project-work {
+                                                            margin-top: 40px;
+                                                        }
+                                                        
+                                                        .project-work .pro-1 {
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        figure {
+                                                            margin: 0;
+                                                        }
+                                                        
+                                                        .image-1 {
+                                                            position: relative;
+                                                            border-radius: 1rem;
+                                                            overflow: hidden;
+                                                        }
+                                                        
+                                                        .overlay,
+                                                        .image-1 figcaption {
+                                                            height: 100%;
+                                                            width: inherit;
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                        }
+                                                        
+                                                        .overlay {
+                                                            background-color: rgba(0, 0, 0, 0.37);
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .image-1 figcaption {
+                                                            padding: 2rem 2rem;
+                                                            text-align: center;
+                                                            background-color: #142850;
+                                                            z-index: 1;
+                                                            color: white;
+                                                            opacity: 0;
+                                                            transition: opacity .3s ease;
+                                                        }
+                                                        
+                                                        .image-1 figcaption a {
+                                                            font-size: 1.3rem;
+                                                            color: inherit;
+                                                            text-decoration: none;
+                                                            border: 2px solid #00a8cc;
+                                                            padding: 5px 20px;
+                                                            display: block;
+                                                            margin: 0 auto;
+                                                            width: max-content;
+                                                            border-radius: 1rem;
+                                                            transition: background-color .2s ease-in-out;
+                                                        }
+                                                        
+                                                        .image-1 img {
+                                                            transition: all .3s ease;
+                                                        }
+                                                        
+                                                        .image-1:hover img {
+                                                            transform: scale(1.1);
+                                                        }
+                                                        
+                                                        .image-1:hover figcaption {
+                                                            opacity: 1;
+                                                        }
+                                                        
+                                                        .image-1 figcaption a:hover {
+                                                            background-color: #00a8cc;
+                                                        }
+                                                        
+                                                        .image-1 figcaption h3 {
+                                                            font-weight: 400;
+                                                        }
+                                                        
+                                                        .button {
+                                                            display: block;
+                                                            text-decoration: none;
+                                                            font-size: 1.1rem;
+                                                            padding: .5rem .8rem;
+                                                            border: 2px solid #00a8cc;
+                                                            margin: 0 auto;
+                                                            width: max-content;
+                                                            font-weight: 500;
+                                                            color: #00a8cc;
+                                                            border-radius: 2rem;
+                                                            transition: all var(--dur) var(--effect);
+                                                        }
+                                                        
+                                                        .content-3 .button {
+                                                            margin-top: var(--tm);
+                                                        }
+                                                        
+                                                        .content-3 {
+                                                            margin-top: 3rem;
+                                                        }
+                                                        
+                                                        .button:hover {
+                                                            background-color: #00a8cc;
+                                                            color: white;
+                                                        }
+                                                        
+                                                        .content-4 {
+                                                            margin-top: 3rem;
+                                                        }
+                                                        
+                                                        .content-3:before,
+                                                        .content-4::before {
+                                                            content: " ";
+                                                            display: block;
+                                                            width: 100%;
+                                                            padding: 1px;
+                                                            background-color: #14285029;
+                                                            margin-bottom: 2rem;
+                                                        }
+                                                        
+                                                        .content-4-1 {
+                                                            display: flex;
+                                                            flex-wrap: wrap;
+                                                            align-items: center;
+                                                            justify-content: space-between;
+                                                            width: 80%;
+                                                            margin: 0 auto;
+                                                        }
+                                                        
+                                                        .content-4-1 div img {
+                                                            max-width: 100%;
+                                                            width: 70%;
+                                                        }
+                                                        
+                                                        .content-4-1 div {
+                                                            flex: 0 0 45%;
+                                                            margin-bottom: 3rem;
+                                                        }
+                                                        
+                                                        .content-5-1 {
+                                                            background-image: linear-gradient(#4a009e, #00a8cc);
+                                                            color: white;
+                                                            padding-bottom: 10rem;
+                                                            margin-bottom: 10rem;
+                                                        }
+                                                        
+                                                        .content-5 .button {
+                                                            margin-top: 2rem;
+                                                        }
+                                                        
+                                                        .col-md {
+                                                            background-color: white;
+                                                            border-radius: .8rem;
+                                                            padding: 1.5rem;
+                                                            margin-bottom: 2.5rem;
+                                                            box-shadow: 0 5px 5px 0 #1428502a, 0 0 0 1px #90ddee4b;
+                                                        }
+                                                        
+                                                        .bt-e {
+                                                            padding: 7px 40px;
+                                                        }
+                                                        
+                                                        .content-6 h4 {
+                                                            font-size: 1.2rem;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .content-6 h4:nth-child(2) {
+                                                            margin-bottom: 50px;
+                                                        }
+                                                        
+                                                        .content-7 {
+                                                            text-align: center;
+                                                            line-height: 2rem;
+                                                            margin-top: 80px;
+                                                            background-color: #142850;
+                                                            color: white;
+                                                            padding: 20px;
+                                                            border-radius: 1.1rem;
+                                                        }
+                                                        
+                                                        .content-7 p {
+                                                            font-size: 1.1rem;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .content-7 a {
+                                                            color: white;
+                                                        }
+                                                        
+                                                        .con-6-7 {
+                                                            margin-top: 2.5rem;
+                                                        }
+                                                        
+                                                        .con-6-7 h2 {
+                                                            font-weight: normal;
+                                                        }
+                                                        
+                                                        footer {
+                                                            text-align: center;
+                                                            background-image: linear-gradient(#4a009e, #00a8cc);
+                                                            color: white;
+                                                        }
+                                                        
+                                                        .ft-logo {
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        footer div a {
+                                                            margin-bottom: 20px;
+                                                            display: block;
+                                                        }
+                                                        
+                                                        .sn span svg {
+                                                            width: 15px;
+                                                            /* display: inline-block; */
+                                                        }
+                                                        
+                                                        .sn span {}
+                                                        
+                                                        .sn {
+                                                            border: 2px solid rgba(255, 255, 255, 0.219);
+                                                            border-radius: 100%;
+                                                            display: inline-block;
+                                                            padding: 15px;
+                                                            margin-left: 10px;
+                                                            color: white;
+                                                            transition: all .3s var(--effect);
+                                                        }
+                                                        
+                                                        .sn:hover {
+                                                            color: #142850;
+                                                            background-color: white;
+                                                        }
+                                                        
+                                                        footer {
+                                                            z-index: 0;
+                                                            margin-top: 8rem;
+                                                            padding-bottom: 120px;
+                                                        }
+                                                        
+                                                        footer .content-7 {
+                                                            margin-top: -5rem;
+                                                            margin-bottom: 100px;
+                                                            padding: 3rem 1rem;
+                                                        }
+                                                        
+                                                        .cr {
+                                                            margin-top: 1rem;
+                                                            display: block;
+                                                            font-weight: bold;
+                                                            font-size: 1.2rem;
+                                                            color: rgba(255, 255, 255, 0.541);
+                                                        }
+                                                        /* small col-3 view */
+                                                        
+                                                        @media (min-width:768px) {
+                                                            .flex-3 {
+                                                                display: flex;
+                                                                align-items: stretch;
+                                                            }
+                                                            .con-1 {
+                                                                border-radius: 1rem 0 0 1rem;
+                                                            }
+                                                            .con-3 {
+                                                                border-radius: 0 1rem 1rem 0;
+                                                            }
+                                                            .section-2 {
+                                                                width: 100%;
+                                                                padding: 0 1.5rem;
+                                                            }
+                                                            .flex-3-1 {
+                                                                display: flex;
+                                                                flex-wrap: wrap;
+                                                                justify-content: space-between;
+                                                            }
+                                                            .flex-3-1 div {
+                                                                flex: 0 0 48%
+                                                            }
+                                                            .flex-3-1 h3,
+                                                            .flex-3-1 a {
+                                                                font-size: 120%;
+                                                            }
+                                                            .content-4-1 div {
+                                                                flex: 0 0 23%;
+                                                                margin-bottom: 3rem;
+                                                            }
+                                                            .content-4-1 {
+                                                                max-width: 768px;
+                                                            }
+                                                            .content-7 .flex-3 {
+                                                                justify-content: space-between;
+                                                                align-items: center;
+                                                            }
+                                                            .content-7 .flex-3 div {
+                                                                flex: 0 0 30%;
+                                                            }
+                                                            .content-7 {
+                                                                /* padding-bottom: 1rem !important; */
+                                                            }
+                                                            .content-7 h1 {
+                                                                font-size: 2rem;
+                                                            }
+                                                            .inner-fs {
+                                                                max-width: 610px;
+                                                                margin: 0 auto;
+                                                                line-height: 4rem;
+                                                            }
+                                                            .inner-fs h3 {
+                                                                font-size: 1.8rem;
+                                                            }
+                                                            .inner-fs p {
+                                                                font-size: 1.4rem;
+                                                                line-height: 2.5rem;
+                                                            }
+                                                            .thumbnail h1 {
+                                                                font-size: 230%;
+                                                                line-height: 3rem;
+                                                                font-weight: 700;
+                                                            }
+                                                            .thumbnail {
+                                                                width: 90%;
+                                                                margin: 0 auto;
+                                                                margin-top: 5rem;
+                                                            }
+                                                            .inner-project {
+                                                                max-width: 768px;
+                                                                margin: 0 auto;
+                                                                margin-top: 3rem;
+                                                            }
+                                                            .inner-project h2 {
+                                                                font-size: 2.3rem;
+                                                            }
+                                                            .inner-project h4 {
+                                                                font-size: 1.5rem;
+                                                                line-height: 2.5rem;
+                                                            }
+                                                            .content-5-1 {
+                                                                padding-top: 5rem;
+                                                            }
+                                                            .pro-1 .image-1 figcaption {
+                                                                padding-top: 2rem !important;
+                                                            }
+                                                            .self {
+                                                                width: 14rem;
+                                                            }
+                                                            .g-pc {
+                                                                margin-top: 11rem;
+                                                                /* padding-bottom: 20px; */
+                                                            }
+                                                            .content-5-1 h4,
+                                                            .first-section p {
+                                                                font-size: 140%;
+                                                            }
+                                                            .section-2 h4,
+                                                            .col-md h4,
+                                                            .section-2 p {
+                                                                font-size: 140%;
+                                                            }
+                                                            .project-done .col-md {
+                                                                padding: 2rem;
+                                                            }
+                                                            .section-2 li {
+                                                                font-size: 120%;
+                                                                line-height: 2rem;
+                                                            }
+                                                            .section-2 div {
+                                                                padding: 1rem;
+                                                            }
+                                                            .flex-3-1 figcaption {
+                                                                padding-top: 3rem !important;
+                                                                font-size: 130%;
+                                                            }
+                                                            .content-3 h1 {
+                                                                font-size: 2.2rem;
+                                                            }
+                                                            .content-3 h4 {
+                                                                font-size: 1.5rem;
+                                                            }
+                                                            a.button {
+                                                                font-size: 1.3rem;
+                                                            }
+                                                            .primary {
+                                                                /* position: relative; */
+                                                                margin-top: -300px;
+                                                            }
+                                                            .thumbnail {
+                                                                margin-top: 0;
+                                                            }
+                                                        }
+                                                        
+                                                        @media (min-width:1025px) {
+                                                            .thumbnail {
+                                                                margin-top: 0;
+                                                                margin-bottom: 4rem;
+                                                            }
+                                                            .thumbnail h1 {
+                                                                font-size: 270%;
+                                                                font-weight: 800;
+                                                            }
+                                                            .thumbnail h3 {
+                                                                font-size: 150%;
+                                                            }
+                                                            .main-header {
+                                                                padding: 10px 50px;
+                                                            }
+                                                            .collapse {
+                                                                display: none;
+                                                            }
+                                                            .non-collapse {
+                                                                display: unset !important;
+                                                            }
+                                                            .main-nav .non-collapse {
+                                                                display: inline-block;
+                                                                margin-left: .5rem;
+                                                                padding: .7rem 1rem;
+                                                                text-decoration: none;
+                                                                font-weight: normal;
+                                                                font-size: 1.1rem;
+                                                            }
+                                                            .main-nav .round {
+                                                                border: 2px solid #00a8cc;
+                                                                border-radius: 1.5rem;
+                                                                color: #00a8cc;
+                                                            }
+                                                            .content-7,
+                                                            .flex-3,
+                                                            .flex-3-1 {
+                                                                max-width: 1280px;
+                                                                margin: 0 auto;
+                                                            }
+                                                            .flex-3-1 div {
+                                                                flex: 0 0 32%;
+                                                            }
+                                                            .inner-fs {
+                                                                max-width: 710px;
+                                                            }
+                                                            img.self {
+                                                                padding-top: 2.5rem;
+                                                            }
+                                                        }
